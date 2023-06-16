@@ -1,0 +1,44 @@
+.rooms__block{
+    display: grid;
+    gap:20px;
+    width: 100vw;
+    height: 100vh;
+    background-color:#293133 ;
+    grid-template-rows: 10% 90%;
+    justify-content: center;
+}
+.rooms{
+    background-color:#364042 ;
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+    position: relative;
+    top:30px;
+    display: grid;
+    grid-template-rows: 10% 20% 20% 20%;
+    border-radius: 10px;
+}
+.rooms__header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 3px solid #fff;
+}
+.rooms__header__button{
+    display: flex;
+    justify-self: right;
+    padding:10px 10px 10px 10px;
+    padding-right: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+.rooms__header p{
+    text-align: left;
+    padding-left: 25px;
+    padding-top:10px;
+    font-size: 24pt;
+    cursor: none;
+    user-select: none;
+    color:#fff;
+}
