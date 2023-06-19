@@ -1,0 +1,91 @@
+@font-face {
+	font-family: 'Arkhip';
+    src: url('../../../assets/fonts/Arkhip.eot');
+    src: local('Arkhip'),
+        url('../../../assets/fonts/Arkhip.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/Arkhip.woff2') format('woff2'),
+        url('../../../assets/fonts/Arkhip.woff') format('woff'),
+        url('../../../assets/fonts/Arkhip.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.wrapper{
+    background-color: #293133;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    justify-content: center;
+}
+.login__block{
+    background-color: #364042;
+    height: 60%;
+    width: 35%;
+    display: grid;
+    grid-template-rows: 15% 80%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.login__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+    border-bottom: 3px solid #fff;
+}
+.login__title p{
+    font-family: 'Arkhip';
+    font-size:24pt;
+}
+.login__form{
+    background-color: #364042;
+    display: grid;
+    padding-top:30px;
+    grid-template-rows: 30% 35% 10%;
+    padding-bottom: 20px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    gap:30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.login__form__input{
+    color: #fff;
+    display: grid;
+    grid-template-rows: 25% 50%;
+}
+.login__form__input label{
+    font-family: "Arkhip";
+}
+.login__form__input input{
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size:16pt;
+    background-color: #9FA2A3;
+}
+.login__form__input input:focus{
+    border:1px solid #000;
+}
+.login__form__button{
+    button{
+        height: 50px;
+        width: 150px;
+        font-family: 'Arkhip'; 
+        border: none;
+        transition: .2s;
+        &:hover{
+            background-color: #828485;
+        }
+    }
+    a{
+        color: white;
+    }
+}
+.login__form__link{
+    color:#fff;
+    
+}

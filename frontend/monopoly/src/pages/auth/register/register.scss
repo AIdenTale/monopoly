@@ -1,0 +1,95 @@
+@font-face {
+	font-family: 'Arkhip';
+    src: url('../../../assets/fonts/Arkhip.eot');
+    src: local('Arkhip'),
+        url('../../../assets/fonts/Arkhip.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/Arkhip.woff2') format('woff2'),
+        url('../../../assets/fonts/Arkhip.woff') format('woff'),
+        url('../../../assets/fonts/Arkhip.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.register__block{
+    height: 100vh;
+    width: 100vw;
+    background-color: #293133;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 20% 60%;
+}
+.register__form__block{
+    display: grid;
+    grid-template-rows: 15% 90%;
+    width: 35%;
+    background-color: #364042;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    color:white;
+    text-align: center;
+}
+.register__form{
+    display: grid;
+    grid-template-rows: 15% 15% 15% 15% 6%;
+    height: 100%;
+}
+.register__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 3px solid #fff;
+
+    p{
+        font-family: 'Arkhip';
+        font-size:24pt;
+    }
+}
+
+.register__form__input{
+    display: grid;
+    grid-template-rows: 30% 50%;
+
+    input{
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        background-color: #9FA2A3;
+        padding-left:15px;
+        color:#fff;
+        font-size: 16pt;
+    }
+    input:focus{
+        border:1px solid #000;
+    }
+}
+.register__form{
+    display: grid;
+    gap:20px;
+    padding-right: 20px;
+    padding-left:20px;
+    padding-top:10px;
+}
+.register__form__button button{
+    font-weight: bold;
+    font-size:14pt;
+    border: none;
+    outline: none;
+    transition: .2s;
+}
+.register__form__button button:hover{
+    background-color: #666666;
+    border: none;
+}
+.register__form__link{
+    cursor: pointer;
+    color:#fff;
+    transition: .2s;
+    &:hover{
+        color: #666666;
+    }
+}

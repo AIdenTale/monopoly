@@ -56,7 +56,7 @@ const router = createBrowserRouter([
         )
     },
     {
-        path: "search",
+        path: "search/:user_id",
         element: (
             <AsyncPage>
                 <SearchPage/>

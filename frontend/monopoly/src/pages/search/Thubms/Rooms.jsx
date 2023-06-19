@@ -1,10 +1,11 @@
+import Cookies from 'js-cookie';
 import './rooms.m.scss';
 
 const Player = (props) => {
     console.log(props)
     return (
-        <div className="player">
-            <img onClick={() => window.location.replace(props.url)} src="http://127.0.0.1:8000/static/user.png"/>  
+        <div key={props.key} className="player">
+            <img src="http://127.0.0.1:8000/static/user.png"/>  
             <p>{props.name}</p>
         </div>
     )
@@ -12,20 +13,30 @@ const Player = (props) => {
 
 
 export const Room = (props) => {
-    const room = props.room
-    console.log(props)
-    const render_players = () => {
-        return room.players.map((player, index) => {
-            // console.log(room.url)
-            return <Player url={room.url} name={player.name}/>
-        })
+    const rooms = props.rooms
+
+    const render_players = (room) => {
+        const is_creator = room.creator == Cookies.get('session_id');
+        return (
+            <div className='room__indent'>
+                {room.players.map((player, index) => {
+                    return <Player name={player}/>
+                })}
+                {is_creator ? <></> : <button onClick={() => props.join(room.room_id)}>присоедениться</button>}
+                {(room.players.length > 1 && is_creator) ? <button onClick={() => props.start(room.room_id)}>начать</button> : <></>}
+            </div>
+        )
     }
 
-    return (
-        <div className="room">
-            <div className="players">
-                {render_players()}
+    return rooms.map((room, index) => {
+        return (
+            <div className="room">
+                <div className="players">
+                    {render_players(room)}
+                </div>
             </div>
-        </div>
-    )
+        )
+    })
+
+    
 }
