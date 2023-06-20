@@ -1,0 +1,425 @@
+
+{
+	"cards": [
+		{
+			"name": "start",
+			"type": "start",
+			"position": "corner",
+			"img": "http://127.0.0.1:8000/static/icons/corner/start_card.png"
+		},
+		{
+			"name": "DANIA",
+			"translate_name": "Дания",
+			"type": "property",
+			"price_color" : "#736C69",
+			"price": 7000,
+			"group": 1,
+			"stars": 0,
+			"starsPrice": 500,
+			"rent": [20, 100, 300, 900, 1600, 2500],
+			"img": "http://127.0.0.1:8000/static/icons/top/da_card.png",
+			"position": "top"
+		},
+		{
+			"name": "chance #1",
+			"type": "chance",
+			"position": "top",
+			"img": "http://127.0.0.1:8000/static/icons/chance_card.png"
+		},
+		{
+			"name": "DANIA",
+			"translate_name": "Дания",
+			"type": "property",
+			"price_color" : "#736C69",
+			"price": 9000,
+			"group": 1,
+			"stars": 0,
+			"starsPrice": 500,
+			"rent": [40, 200, 600, 1800, 3200, 4500],
+			"img": "http://127.0.0.1:8000/static/icons/top/da_card.png",
+			"position": "top"
+		},
+		{
+			"name": "tax #1",
+			"type": "tax",
+			"rent": 2000,
+			"position": "top",
+			"img": "http://127.0.0.1:8000/static/icons/prize_card.png"
+		},
+		{
+			"name": "CAZINO",
+			"type": "specialProperty",
+			"price_color" : "#B28A19",
+			"price": 10000,
+			"group": 10,
+			"rent": [250, 500, 1000, 2000],
+			"img": "http://127.0.0.1:8000/static/icons/cazz_card.png",
+			"position": "top"
+		},
+		{
+			"name": "BELGIUM",
+			"translate_name" : "Бельгия",
+			"price_color" : "#F1BC19",
+ 			"type": "property",
+			"price": 10000,
+			"group": 2,
+			"stars": 0,
+			"starsPrice": 500,
+			"rent": [60, 300, 900, 2700, 4000, 5500],
+			"img": "http://127.0.0.1:8000/static/icons/top/bl_card.png",
+			"position": "top"
+		},
+		{
+			"name": "chance #2",
+			"type": "chance",
+			"position": "top",
+			"img": "http://127.0.0.1:8000/static/icons/chance_card.png"
+		},
+		{
+			"name": "BELGIUM",
+			"translate_name" : "Бельгия",
+			"price_color" : "#F1BC19",
+			"type": "property",
+			"price": 10000,
+			"group": 2,
+			"stars": 0,
+			"starsPrice": 500,
+			"rent": [60, 300, 900, 2700, 4000, 5500],
+			"img": "http://127.0.0.1:8000/static/icons/top/bl_card.png",
+			"position": "top"
+		},
+		{
+			"name": "BELGIUM",
+			"translate_name" : "Бельгия",
+			"price_color" : "#F1BC19",
+			"type": "property",
+			"price": 11000,
+			"group": 2,
+			"stars": 0,
+			"starsPrice": 500,
+			"rent": [80, 400, 1000, 3000, 4500, 6000],
+			"img": "http://127.0.0.1:8000/static/icons/top/bl_card.png",
+			"position": "top"
+		},
+		{
+			"name": "prison",
+			"type": "prison",
+			"position": "corner",
+			"img": "http://127.0.0.1:8000/static/icons/corner/priz_card.png"
+		},
+		{
+			"name": "AZERI",
+			"translate_name" : "Азербальджан",
+			"price_color": "#6F913D",
+			"type": "property",
+			"price": 12000,
+			"group": 3,
+			"stars": 0,
+			"starsPrice": 750,
+			"rent": [100, 500, 1500, 4500, 6250, 7500],
+			"img": "http://127.0.0.1:8000/static/icons/right/azb_card.png",
+			"position": "right"
+		},
+		{
+			"name": "MULTIPLY",
+			"type": "multiplyProperty",
+			"price_color" : "#8ECB51",
+			"price": 5000,
+			"group": 1,
+			"rent": [100, 250],
+			"img": "http://127.0.0.1:8000/static/icons/mult_first_card.png",
+			"position": "right"
+		},
+		{
+			"name": "AZERI",
+			"translate_name" : "Азербальджан",
+			"price_color": "#6F913D",
+			"type": "property",
+			"price": 12000,
+			"group": 3,
+			"stars": 0,
+			"starsPrice": 750,
+			"rent": [100, 500, 1500, 4500, 6250, 7500],
+			"img": "http://127.0.0.1:8000/static/icons/right/azb_card.png",
+			"position": "right"
+		},
+		{
+			"name": "AZERI",
+			"translate_name" : "Азербальджан",
+			"price_color": "#6F913D",
+			"type": "property",
+			"price": 13000,
+			"group": 3,
+			"stars": 0,
+			"starsPrice": 750,
+			"rent": [120, 600, 1800, 5000, 7000, 9000],
+			"img": "http://127.0.0.1:8000/static/icons/right/azb_card.png",
+			"position": "right"
+		},
+		{
+			"name": "CAZINO",
+			"type": "specialProperty",
+			"price_color" : "#B28A19",
+			"price": 10000,
+			"group": 10,
+			"rent": [250, 500, 1000, 2000],
+			"img": "http://127.0.0.1:8000/static/icons/cazz_card.png",
+			"position": "right"
+		},
+		{
+			"name": "EGYPT",
+			"translate_name" : "Египт",
+			"price_color" : "#403F48",
+			"type": "property",
+			"price": 14000,
+			"group": 4,
+			"stars": 0,
+			"starsPrice": 1000,
+			"rent": [140, 700, 2000, 5500, 7500, 9500],
+			"img": "http://127.0.0.1:8000/static/icons/right/eg_card.png",
+			"position": "right"
+		},
+		{
+			"name": "chance #3",
+			"type": "chance",
+			"position": "right",
+			"img": "http://127.0.0.1:8000/static/icons/chance_card.png"
+		},
+		{
+			"name": "EGYPT",
+			"translate_name" : "Египт",
+			"type": "property",
+			"price_color" : "#403F48",
+			"price": 14000,
+			"group": 4,
+			"stars": 0,
+			"starsPrice": 1000,
+			"rent": [140, 700, 2000, 5500, 7500, 9500],
+			"img": "http://127.0.0.1:8000/static/icons/right/eg_card.png",
+			"position": "right"
+		},
+		{
+			"name": "EGYPT",
+			"translate_name" : "Египт",
+			"type": "property",
+			"price_color" : "#403F48",
+			"price": 15000,
+			"group": 4,
+			"stars": 0,
+			"starsPrice": 1000,
+			"rent": [160, 800, 2200, 6000, 8000, 10000],
+			"img": "http://127.0.0.1:8000/static/icons/right/eg_card.png",
+			"position": "right"
+		},
+		{
+			"name": "jackpot#1",
+			"type": "jackpot",
+			"position": "corner",
+			"img": "http://127.0.0.1:8000/static/icons/corner/cas_card.png"
+		},
+		{
+			"name": "JAPAN",
+			"translate_name" : "Япония",
+			"price_color" : "#E9E6E6",
+ 			"type": "property",
+			"price": 16000,
+			"group": 5,
+			"stars": 0,
+			"starsPrice": 1250,
+			"rent": [140, 700, 2000, 5500, 7500, 9500],
+			"img": "http://127.0.0.1:8000/static/icons/bottom/jp_card.png",
+			"position": "bottom"
+		},
+		{
+			"name": "chance #4",
+			"type": "chance",
+			"position": "bottom",
+			"img": "http://127.0.0.1:8000/static/icons/chance_card.png"
+		},
+		{
+			"name": "JAPAN",
+			"translate_name" : "Япония",
+			"type": "property",
+			"price_color" : "#E9E6E6",
+			"price": 16000,
+			"group": 5,
+			"stars": 0,
+			"starsPrice": 1250,
+			"rent": [140, 700, 2000, 5500, 7500, 9500],
+			"img": "http://127.0.0.1:8000/static/icons/bottom/jp_card.png",
+			"position": "bottom"
+		},
+		{
+			"name": "JAPAN",
+			"translate_name" : "Япония",
+			"type": "property",
+			"price_color" : "#E9E6E6",
+			"price": 17000,
+			"group": 5,
+			"stars": 0,
+			"starsPrice": 1250,
+			"rent": [200, 1000, 3000, 7500, 9250, 11000],
+			"img": "http://127.0.0.1:8000/static/icons/bottom/jp_card.png",
+			"position": "bottom"
+		},
+		{
+			"name": "CAZINO",
+			"type": "specialProperty",
+			"price_color" : "#B28A19",
+			"price": 10000,
+			"group": 10,
+			"rent": [250, 500, 1000, 2000],
+			"img": "http://127.0.0.1:8000/static/icons/cazz_card.png",
+			"position": "bottom"
+		},
+		{
+			"name": "KAZAHSTAN",
+			"translate_name" : "Казахстан",
+			"type": "property",
+			"price_color" : "#00BCD4",
+ 			"price": 18000,
+			"group": 6,
+			"stars": 0,
+			"starsPrice": 1500,
+			"rent": [220, 1100, 3300, 8000, 9750, 11500],
+			"img": "http://127.0.0.1:8000/static/icons/bottom/kz_card.png",
+			"position": "bottom"
+		},
+		{
+			"name": "KAZAHSTAN",
+			"type": "property",
+			"translate_name" : "Казахстан",
+			"price_color" : "#00BCD4",
+			"price": 18000,
+			"group": 6,
+			"stars": 0,
+			"starsPrice": 1500,
+			"rent": [220, 1100, 3300, 8000, 9750, 11500],
+			"img": "http://127.0.0.1:8000/static/icons/bottom/kz_card.png",
+			"position": "bottom"
+		},
+		{
+			"name": "MULTIPLY",
+			"type": "multiplyProperty",
+			"price_color" : "#8ECB51",
+			"price": 5000,
+			"group": 1,
+			"rent": [100, 250],
+			"img": "http://127.0.0.1:8000/static/icons/mult_card.png",
+			"position": "bottom"
+		},
+		{
+			"name": "KAZAHSTAN",
+			"translate_name" : "Казахстан",
+			"type": "property",
+			"price_color" : "#00BCD4",
+			"price": 19000,
+			"group": 6,
+			"stars": 0,
+			"starsPrice": 1500,
+			"rent": [240, 1200, 3600, 8500, 1050, 12000],
+			"img": "http://127.0.0.1:8000/static/icons/bottom/kz_card.png",
+			"position": "bottom"
+		},
+		{
+			"name": "police_station#1",
+			"type": "police_station",
+			"position": "corner",
+			"img": "http://127.0.0.1:8000/static/icons/corner/goto_pris_card.png"
+		},
+		{
+			"name": "NIDERLAND",
+			"translate_name" : "Нидерланды",
+			"type": "property",
+			"price_color" : "#A03540",
+			"price": 20000,
+			"group": 7,
+			"stars": 0,
+			"starsPrice": 1750,
+			"rent": [260, 1300, 3900, 9000, 11000, 12750],
+			"img": "http://127.0.0.1:8000/static/icons/left/nd_card.png",
+			"position": "left"
+		},
+		{
+			"name": "NIDERLAND",
+			"translate_name" : "Нидерланды",
+			"type": "property",
+			"price_color" : "#A03540",
+			"price": 20000,
+			"group": 7,
+			"stars": 0,
+			"starsPrice": 1750,
+			"rent": [260, 1300, 3900, 9000, 11000, 12750],
+			"img": "http://127.0.0.1:8000/static/icons/left/nd_card.png",
+			"position": "left"
+		},
+		{
+			"name": "chance #5",
+			"type": "chance",
+			"position": "left",
+			"img": "http://127.0.0.1:8000/static/icons/chance_card.png"
+		},
+		{
+			"name": "NIDERLAND",
+			"translate_name" : "Нидерланды",
+			"type": "property",
+			"price_color" : "#A03540",
+			"price": 21000,
+			"group": 7,
+			"stars": 0,
+			"starsPrice": 1750,
+			"rent": [280, 1500, 4500, 10000, 12000, 14000],
+			"img": "http://127.0.0.1:8000/static/icons/left/nd_card.png", 
+			"position": "left"
+		},
+		{
+			"name": "CAZINO",
+			"type": "specialProperty",
+			"price_color" : "#B28A19",
+			"price": 10000,
+			"group": 10,
+			"rent": [250, 500, 1000, 2000],
+			"img": "http://127.0.0.1:8000/static/icons/cazz_card.png",
+			"position": "left"
+		},
+		{
+			"name": "tax #2",
+			"type": "tax",
+			"rent": 1000,
+			"position": "left",
+			"img" : "http://127.0.0.1:8000/static/icons/prize_card.png"
+		},
+		{
+			"name": "RUSSIA",
+			"translate_name" : "Россия",
+			"type": "property",
+			"price_color" : "#78A0CF",
+ 			"price": 23000,
+			"group": 8,
+			"stars": 0,
+			"starsPrice": 2000,
+			"rent": [350, 1750, 5000, 11000, 13000, 15000],
+			"img": "http://127.0.0.1:8000/static/icons/left/ru_card.png",
+			"position": "left"
+		},
+		{
+			"name": "chance #6",
+			"type": "chance",
+			"position": "left",
+			"img" : "http://127.0.0.1:8000/static/icons/chance_card.png"
+		},
+		{
+			"name": "RUSSIA",
+			"translate_name" : "Россия",
+			"type": "property",
+			"price_color" : "#78A0CF",
+			"price": 25000,
+			"group": 8,
+			"stars": 0,
+			"starsPrice": 2000,
+			"rent": [500, 2000, 6000, 14000, 17000, 20000],
+			"img": "http://127.0.0.1:8000/static/icons/left/ru_card.png",
+			"position": "left"
+		}
+	]
+}

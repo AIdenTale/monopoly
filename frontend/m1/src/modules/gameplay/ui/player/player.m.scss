@@ -1,0 +1,54 @@
+@font-face {
+	font-family: 'Arkhip';
+    src: url('../../../fonts/Arkhip.eot');
+    src: local('Arkhip'),
+        url('../../../fonts/Arkhip.eot?#iefix') format('embedded-opentype'),
+        url('../../../fonts/Arkhip.woff2') format('woff2'),
+        url('../../../fonts/Arkhip.woff') format('woff'),
+        url('../../../fonts/Arkhip.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.player__inner{
+    top:0;
+    bottom: 0;
+    background: #364042;
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 60% 15% 10%;
+    padding-top: 25px;
+    text-align: center;
+    font-family: 'Arkhip';
+
+    &::before{
+        content: "";
+        background-color: #1B2021;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        margin-top:10px;
+        margin-left:10px;
+        border-radius: 50%;
+    }
+}
+.player__image{
+    display: flex;
+    width: 100%;
+    object-fit: fill;
+    justify-content: center;
+
+    img{
+        width: 50%;
+        height: 100%;
+        padding:5px;
+        border-radius:50%;
+        background-color: #1B2021;
+    }
+}

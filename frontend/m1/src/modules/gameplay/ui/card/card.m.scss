@@ -1,0 +1,134 @@
+@font-face {
+	font-family: 'Arkhip';
+    src: url('../../../fonts/Arkhip.eot');
+    src: local('Arkhip'),
+        url('../../../fonts/Arkhip.eot?#iefix') format('embedded-opentype'),
+        url('../../../fonts/Arkhip.woff2') format('woff2'),
+        url('../../../fonts/Arkhip.woff') format('woff'),
+        url('../../../fonts/Arkhip.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.root {
+	--card-height: 15vh;
+	--card-width: 7.5vh;
+	--card-horizontal: 10vh;
+	--card-horizontal-height: 10vh;
+	--card-image-size: 85%;
+	--card-text-size: 15%;
+	
+	
+	cursor: pointer;
+	position: relative;
+	background-color: #9FA2A3;
+	display: grid;
+	place-items: center;
+	width: var(--card-width);
+	height: var(--card-height);
+	border: 1px solid black;
+	font-size: 12pt;
+	font-family: 'Arkhip';
+
+	.img-container {
+		grid-area: img;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+
+		img {
+			object-fit: contain;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.price {
+		text-align: center;
+		width: 100%;
+		height: 100%;
+	}
+	.card__name{
+		text-align: center;
+		position: absolute;
+		
+	}
+}
+
+.top {
+	grid-template-areas:
+		"price"
+		"img";
+	grid-template-rows: var(--card-text-size) var(--card-image-size);
+	width: var(--card-horizontal);
+	.card__name {
+		bottom: 8px;
+	}
+	
+}
+
+.corner {
+	width: var(--card-height);
+	height: var(--card-height);
+
+	.price {
+		display: none;
+	}
+	.card__name{
+		display: none;
+	}
+}
+
+.right,
+.left {
+	grid-template-rows: 1fr;
+	width: var(--card-height);
+	height: var(--card-width);
+}
+
+.right {
+	grid-template-areas: "img price";
+	grid-template-columns: var(--card-image-size) var(--card-text-size);
+	justify-items: end;
+
+	.price {
+		writing-mode: vertical-rl;
+	}
+	.card__name{
+		height: 100%;
+		word-wrap: break-word;
+		font-weight: bold;
+		writing-mode: vertical-rl;
+		left: 8px;
+	}
+}
+
+.left {
+	grid-template-areas: "price img";
+	grid-template-columns: var(--card-text-size) var(--card-image-size);
+	justify-items: start;
+
+	.price {
+		writing-mode: vertical-rl;
+		transform: scale(-1, -1);
+	}
+	.card__name {
+		border:1px solid #000;
+		height: 100%;
+		word-wrap: break-word;
+		writing-mode: vertical-rl;
+		transform: scale(-1, -1);
+		right: 8px;
+	}
+}
+
+.bottom {
+	grid-template-areas:
+		"img"
+		"price";
+	grid-template-rows: var(--card-image-size) var(--card-text-size);
+	width: var(--card-horizontal);
+	.card__name{
+		top:8px;
+	}
+}

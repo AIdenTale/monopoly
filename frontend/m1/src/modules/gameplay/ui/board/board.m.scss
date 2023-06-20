@@ -1,0 +1,69 @@
+*{
+	box-sizing: border-box;
+}
+.table{
+	width: 1920px;
+	display: flex;
+	justify-content: center;
+}
+.table__inner{
+	position: relative;
+	display: grid;
+	grid-template-columns: 15% 80%;
+	width: 90%;
+}
+
+.root {
+	position: relative;
+	display: grid;
+	grid-template-areas:
+		"corner1 top1 top2 top3 top4 top5 top6 top7 top8 top9 corner2"
+		"left9 . . . . . . . . . right1"
+		"left8 . . . . . . . . . right2"
+		"left7 . . . . . . . . . right3"
+		"left6 . . . . . . . . . right4"
+		"left5 . . . . . . . . . right5"
+		"left4 . . . . . . . . . right6"
+		"left3 . . . . . . . . . right7"
+		"left2 . . . . . . . . . right8"
+		"left1 . . . . . . . . . right9"
+		"corner4 btm9 btm8 btm7 btm6 btm5 btm4 btm3 btm2 btm1 corner3";
+	grid-template-rows: repeat(11, auto); 
+	grid-template-columns: repeat(11, auto);
+	// 25% 75% grid-columns
+	width: fit-content;
+	max-height: 98vh;
+}
+
+.center_board {
+	grid-row-start: 2;
+	grid-row-end: 11;
+	grid-column-start: 2;
+	grid-column-end: 11;
+	background: #293133;
+	padding:10px;
+    z-index: 10;
+	position: relative;
+	
+}
+
+body{
+	background-color: #293133;
+}
+
+.canvas__block{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.table__players{
+	font-size: 16pt;
+	display: grid;
+	grid-template-rows: 25% 25% 25% 25%;
+	height: 800px;;
+	width: 26vh;
+	gap:10px;
+	margin-right: 5vh;
+}
