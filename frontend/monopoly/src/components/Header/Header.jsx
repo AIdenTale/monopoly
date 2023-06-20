@@ -10,7 +10,7 @@ const Header = () => {
     let is_anonymous = true;
     
     const refm = useRef();
-    const [bb, setbb] = useState(123);
+    const [bb, setbb] = useState(null);
 
 
     const get_user = () => {
@@ -19,6 +19,7 @@ const Header = () => {
 
         axios.get('http://127.0.0.1:8000/v1/user', {
         }).then((response) =>{
+            console.log(response.data)
             setbb(response.data.user)
         })
         
@@ -44,12 +45,14 @@ const Header = () => {
                 <div className="header__logo">
                     <img src={logo}/>
                     {
-                    is_anonymous ? (
+                    bb == null ? (
                         <div className="header__auth_button">
-                            <button ref={refm} onClick={() => window.location.replace(window.origin + "/login")} >{bb}</button>
+                            <button ref={refm} onClick={() => window.location.replace(window.origin + "/login")}>Вход</button>
                         </div>
                     ) : (
-                        <>2</>
+                        <div className="header__auth_button">
+                            <button ref={refm} onClick={() => window.location.replace(window.origin + "/profile")}>{bb}</button>
+                        </div>
                     )
                     }
                 </div>

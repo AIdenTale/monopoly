@@ -4,6 +4,7 @@ import { Suspense, lazy } from "react";
 
 import IndexPage from "../pages/IndexPage";
 import SearchPage from "../pages/search/SearchPage";
+import { Profile } from "../pages/profile/Profile";
 
 const AsyncPage = ({children}) => {
     return <Suspense>{children}</Suspense>
@@ -56,10 +57,18 @@ const router = createBrowserRouter([
         )
     },
     {
-        path: "search/:user_id",
+        path: "search",
         element: (
             <AsyncPage>
                 <SearchPage/>
+            </AsyncPage>
+        )
+    },
+    {
+        path:"profile",
+        element: (
+            <AsyncPage>
+                <Profile/>
             </AsyncPage>
         )
     }

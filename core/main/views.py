@@ -10,3 +10,6 @@ def index(request):
 
 def search_view(request):
     return render(request, "main/index.html")
+
+def game_view(request, *args, **kwargs):
+    return render(request, 'main/game.html')

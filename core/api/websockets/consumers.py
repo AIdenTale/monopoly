@@ -288,14 +288,13 @@ class GameConsumer(WebsocketConsumer):
                 game_id : game,
             }))
 
-            if allow_start:
-                print('ALLOW START')
-                allow_start = False
-                async_to_sync(self.channel_layer.group_send)(
-                game_id,
-                {
-                    "type": "start",
-                }
+            print('ALLOW START')
+            allow_start = False
+            async_to_sync(self.channel_layer.group_send)(
+            game_id,
+            {
+                "type": "start",
+            }
             )
 
         elif event == 'drop':

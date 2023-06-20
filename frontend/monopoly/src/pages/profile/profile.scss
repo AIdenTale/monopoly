@@ -1,0 +1,90 @@
+@font-face {
+	font-family: 'Arkhip';
+    src: url('../../../assets/fonts/Arkhip.eot');
+    src: local('Arkhip'),
+        url('../../../assets/fonts/Arkhip.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/Arkhip.woff2') format('woff2'),
+        url('../../../assets/fonts/Arkhip.woff') format('woff'),
+        url('../../../assets/fonts/Arkhip.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+}
+.profile__block{
+    background-color: #293133;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile__info{
+    height: 50%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 10% 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #364042;
+    border-radius: 10px;
+}
+.profile__info__image{
+    img{
+        height: 150px;
+        width: 150px;
+        border:3px solid #6F913D;
+        border-radius: 50%;
+        background: #9FA2A3;
+
+    }
+    p{
+        text-align: center;
+        color:white;
+        font-size: 20pt;
+    }
+}
+.profile__info__stats{
+    
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15%;
+    div{
+        
+        // width: 0%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        color:white;
+        font-size:16pt;
+        p{
+            &:first-child{
+                justify-self: center;
+                margin: 0 auto;
+                background-color: #9A9D9E;
+                color: #282F31;
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+                font-size: 40pt;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

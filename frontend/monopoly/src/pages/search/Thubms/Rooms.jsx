@@ -1,6 +1,7 @@
 import Cookies from 'js-cookie';
 import './rooms.m.scss';
-
+import axios from 'axios';
+import { useState } from 'react';
 const Player = (props) => {
     console.log(props)
     return (
@@ -16,7 +17,16 @@ export const Room = (props) => {
     const rooms = props.rooms
 
     const render_players = (room) => {
-        const is_creator = room.creator == Cookies.get('session_id');
+        let user_id = 0;
+        const [user, setUser] = useState(0);
+        axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+        axios.defaults.headers.post["Access-Control-Allow-Headers"] = "Access-Control-Allow-Origin, Origin, X-Requested-With, Content-Type, Accept, access-control-allow-headers"
+
+        axios.get('http://127.0.0.1:8000/v1/user', {
+        }).then((response) =>{
+            setUser(response.data.user)
+        })
+        const is_creator = room.creator == user;
         return (
             <div className='room__indent'>
                 {room.players.map((player, index) => {
